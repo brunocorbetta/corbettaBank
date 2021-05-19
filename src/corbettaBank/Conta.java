@@ -12,6 +12,14 @@ public class Conta {
 		this.numero = numero;
 	}
 	
+	public Cliente getTitular() {
+		return this.titular;
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
 	public double getSaldo() {
 		return this.saldo;
 	}
@@ -31,5 +39,15 @@ public class Conta {
 	
 	public void setNumero(String numero) {
 		this.numero = numero;
+	}
+	
+	public void deposita(double valor) {
+		this.saldo = saldo + valor;
+		System.out.println("Deposito efetuado com sucesso, seu novo saldo é R$" + this.getSaldo());
+	}
+	
+	public void saca(double valor) {
+		this.saldo = saldo - valor;
+		System.out.println("Saque efetuado com sucesso, seu novo saldo é R$" + this.getSaldo());
 	}
 }
