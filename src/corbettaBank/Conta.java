@@ -5,12 +5,16 @@ public class Conta {
 	private String numero;
 	private double saldo;
 	private Cliente titular;
+	public static int total;
 	
 	public Conta(String agencia, String numero, double saldo) {
+		total++;
 		this.saldo = saldo;
 		this.agencia = agencia;
 		this.numero = numero;
+		System.out.println("total de contas criadas " + total);
 	}
+	
 	
 	public void pegaSaldo() {
 		System.out.println("O saldo da è " + this.saldo);
