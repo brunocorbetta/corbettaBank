@@ -1,8 +1,10 @@
 package corbettaBank;
 
-public class Cliente {
+public class Pessoa {
 	private String nome;
 	private String cpf;
+	private String sexo;
+
 	
 	public String getNome() {
 		return nome;
@@ -15,6 +17,12 @@ public class Cliente {
 	}
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+	public String getSexo() {
+		return sexo;
+	}
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
 	}
 	
 
