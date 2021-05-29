@@ -4,8 +4,9 @@ public abstract class Funcionario extends Pessoa implements Gratificacao, Autent
 
 	private double salario;
 	private double senha;
+	private double nivelDoCargo;
 
-	public boolean getAutentica(int senhaDigitada) {
+	public boolean autentica(int senhaDigitada) {
 		if(senhaDigitada == senha) {
 			System.out.println("Acesso Liberado");
 			return true;}
@@ -20,13 +21,35 @@ public abstract class Funcionario extends Pessoa implements Gratificacao, Autent
 		return salario;
 	}
 
+	public double getSenha() {
+		return senha;
+	}
+
+
+	public void setSenha(double senha) {
+		this.senha = senha;
+	}
+
+
 	public double setSalario(double salario) {
 		this.salario = salario;
 		return salario;
 	}
 
-	public double getBonificacao(double nivelDoCargo) {
-		return this.setSalario(getSalario() * nivelDoCargo);
+	public double bonificacao(double nivelDoCargo) {
+		double gratificacao = this.salario * nivelDoCargo;
+		System.out.println(gratificacao);
+		return gratificacao;
+	}
+
+
+	public double getNivelDoCargo() {
+		return nivelDoCargo;
+	}
+
+
+	public void setNivelDoCargo(double ivelDoCargo) {
+		this.nivelDoCargo = ivelDoCargo;
 	}
 
 }

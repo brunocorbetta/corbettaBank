@@ -2,6 +2,6 @@ package corbettaBank;
 
 public interface Gratificacao {
 
-	double getBonificacao(double nivelDoCargo); 
+	double bonificacao(double nivelDoCargo); 
 	
 }
