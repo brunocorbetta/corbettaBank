@@ -12,7 +12,7 @@ public class Conta {
 		this.saldo = saldo;
 		this.agencia = agencia;
 		this.numero = numero;
-		System.out.println("total de contas criadas " + total);
+
 	}
 
 
