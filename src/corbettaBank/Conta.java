@@ -7,9 +7,8 @@ public class Conta {
 	private Cliente titular;
 	public static int total;
 
-	public Conta(String agencia, String numero, double saldo, Cliente titular) {
+	public Conta(String agencia, String numero, Pessoa titular) {
 		total++;
-		this.saldo = saldo;
 		this.agencia = agencia;
 		this.numero = numero;
 

@@ -7,6 +7,9 @@ public class TestaFuncionario {
 			corbetta.bonificacao(corbetta.getNivelDoCargo());
 			corbetta.autentica(2412);
 			
+		Programador luciana = new Programador("Luciana Bueno", "F", 5000, 4456, 0.5);
+			luciana.bonificacao(luciana.getNivelDoCargo());
+			luciana.autentica(2412);
 			
 	}
 

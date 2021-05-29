@@ -2,8 +2,8 @@ package corbettaBank;
 
 public class ContaPoupanca extends Conta {
 
-	public ContaPoupanca(String agencia, String numero, double saldo, Cliente titular) {		
-		super(agencia, numero, saldo, titular);
+	public ContaPoupanca(String agencia, String numero, Cliente titular) {		
+		super(agencia, numero, titular);
 		super.setSaldo(50);
 		
 	}

@@ -11,7 +11,7 @@ public abstract class Funcionario extends Pessoa implements Gratificacao, Autent
 			System.out.println("Acesso Liberado");
 			return true;}
 		else {
-			System.out.println("Acesso negdo");
+			System.out.println("Acesso negado");
 			return false;
 		}
 	}

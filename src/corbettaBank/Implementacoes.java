@@ -13,10 +13,10 @@ public class Implementacoes {
 		lu.setCpf("345.889.446-77");
 		lu.setSexo("F");
 
-		Conta contaBruno = new ContaCorrente("0502", "7766", 0, bruno);
+		Conta contaBruno = new ContaCorrente("0502", "7766", bruno);
 			System.out.println("Conta Criada seu saldo é de R$ " + contaBruno.getSaldo() + " " + bruno.getNome());
 			
-		Conta contaLu = new ContaPoupanca("0502", "7766=7", 0, lu);
+		Conta contaLu = new ContaPoupanca("0502", "7766=7", lu);
 			System.out.println("Conta Criada seu saldo é de R$ " + contaLu.getSaldo() + " " + lu.getNome());
 			
 			
