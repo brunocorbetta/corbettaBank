@@ -2,7 +2,7 @@ package corbettaBank;
 
 public class ContaCorrente extends Conta {
 
-	public ContaCorrente(String agencia, String numero, Cliente titular) {		
+	public ContaCorrente(String agencia, String numero, Pessoa titular) {		
 		super(agencia, numero, titular);
 		super.setSaldo(300);
 		
