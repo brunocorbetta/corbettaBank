@@ -1,6 +1,6 @@
 package corbettaBank;
 
-public class Conta {
+public abstract class Conta {
 	private String agencia;
 	private String numero;
 	private double saldo;
@@ -51,11 +51,9 @@ public class Conta {
 
 	public void saca(double valor) {
 		if(this.saldo < valor) {
-			System.out.println("saldo insuficiente");
-		} else {
-			this.saldo = saldo - valor;
-			System.out.println("Saque efetuado com sucesso, seu novo saldo é R$" + this.getSaldo());
+			throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor: " + valor);
 		}
+		this.saldo -= valor;
 	}
 
 	public boolean transfere(double valor, Conta titular) {
