@@ -1,4 +1,4 @@
-package corbettaBank;
+package br.com.corbettabank.banco.modelo;
 
 public class Pessoa {
 	private String nome;

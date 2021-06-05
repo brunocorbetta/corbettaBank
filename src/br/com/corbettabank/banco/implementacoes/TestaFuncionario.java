@@ -1,4 +1,6 @@
-package corbettaBank;
+package br.com.corbettabank.banco.implementacoes;
+
+import br.com.corbettabank.banco.modelo.*;
 
 public class TestaFuncionario {
 

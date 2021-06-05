@@ -1,4 +1,6 @@
-package corbettaBank;
+package br.com.corbettabank.banco.implementacoes;
+
+import br.com.corbettabank.banco.modelo.*;
 
 public class Implementacoes {
 
@@ -22,7 +24,7 @@ public class Implementacoes {
 			
 			contaBruno.transfere(200, contaLu);
 			contaBruno.deposita(300);
-			contaLu.saca(1500);
+			contaLu.saca(100);
 			
 			System.out.println(contaBruno.getSaldo());
 			System.out.println( contaLu.getSaldo());
