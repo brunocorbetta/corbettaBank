@@ -1,5 +1,12 @@
 package br.com.corbettabank.banco.modelo;
 
+/**
+ * classe abstrata para fazer as contas filhos
+ * 
+ * @author bruno corbetta
+ *
+ */
+
 public abstract class Conta {
 	private String agencia;
 	private String numero;
@@ -77,5 +84,11 @@ public abstract class Conta {
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
+	
+	@Override
+		public String toString() {
+			// TODO Auto-generated method stub
+			return  "agencia " + this.getAgencia();
+		}
 
 }

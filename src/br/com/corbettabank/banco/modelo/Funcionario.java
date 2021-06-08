@@ -1,5 +1,13 @@
 package br.com.corbettabank.banco.modelo;
 
+
+/**
+ * classe par fazer qualque tipo de pessoa no meu projeto.
+ * 
+ * @author bruno corbetta
+ *
+ */
+
 public abstract class Funcionario extends Pessoa implements Gratificacao, Autentica {
 
 	private double salario;
