@@ -9,12 +9,12 @@ package br.com.corbettabank.banco.modelo;
 
 public abstract class Conta {
 	private String agencia;
-	private String numero;
+	private int numero;
 	private double saldo;
 	private Cliente titular;
 	public static int total;
 
-	public Conta(String agencia, String numero, Pessoa titular) {
+	public Conta(String agencia, int numero, Pessoa titular) {
 		total++;
 		this.agencia = agencia;
 		this.numero = numero;
@@ -43,11 +43,11 @@ public abstract class Conta {
 		this.agencia = agencia;
 	}
 
-	public String getNumero() {
+	public int getNumero() {
 		return this.numero;
 	}
 
-	public void setNumero(String numero) {
+	public void setNumero(int numero) {
 		this.numero = numero;
 	}
 

@@ -1,5 +1,8 @@
 package br.com.corbettabank.banco.implementacoes;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import br.com.corbettabank.banco.modelo.*;
 
 public class Implementacoes {
@@ -22,6 +25,11 @@ public class Implementacoes {
 			System.out.println("Conta Criada seu saldo é de R$ " + contaLu.getSaldo() + " " + lu.getNome());
 			
 			
+			
+		List<Conta> contas = new ArrayList<>();
+			contas.add(contaLu);
+			contas.add(contaBruno);
+			
 			contaBruno.transfere(200, contaLu);
 			contaBruno.deposita(300);
 			contaLu.saca(100);
@@ -31,6 +39,9 @@ public class Implementacoes {
 			
 			System.out.println(contaBruno);
 			System.out.println(contaLu);
+			
+			System.out.println(contas);
+			//contas.sort( (contaLu, contaBruno) -> Integer.compare(contaLu.getNumero(), contaBruno.getNumero()) );
 			
 			
 	}
